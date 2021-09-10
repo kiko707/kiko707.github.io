@@ -15,7 +15,8 @@ a:hover{
   text-align: center;
 }
 .centering {
-  padding-left: 500px;
+  display: table;
+  margin: 0 auto;
 }
 
 .navbar {

@@ -18,7 +18,9 @@ a:hover{
   display: table;
   margin: 0 auto;
 }
-
+.size {
+  font-size: 25px;
+}
 .navbar {
   background-color: black;
   border-radius: 2px;

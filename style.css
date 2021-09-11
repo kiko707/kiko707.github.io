@@ -19,7 +19,9 @@ a:hover{
   margin: 0 auto;
 }
 .size {
-  font-size: 25px;
+  color: beige;
+  background-color: black;
+  font-size: 30px;
 }
 .navbar {
   background-color: black;

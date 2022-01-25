@@ -16,10 +16,10 @@
     <hr>
 
     <p>
-      My name is Francisco Fernandez and I am currently a Senior at
-      Sacramento State University that is majoring in Computer Science.
+      My name is Francisco Fernandez and I am a recent graduate from the
+      California State University of Sacramento with a Bachelor of Science in Computer Science.
       Some activities I do in my spare time include going swimming and playing soccer.
-      My carrer goal is to become a software developer once I graduate.
+      My carrer goal is to become a remarkable software developer
     </p>
 
     <section>
@@ -46,7 +46,7 @@
     <section class="centering">
         <h1 class="center">Skills</h1>
         <ul>
-          <li>Java, JavaScript, HTML, CSS</li>
+          <li>Java, JavaScript(React), HTML, CSS, SQL</li>
           <li>Unix/Linux, MySQL, Microsoft Office</li>
           <li>SCRUM, GitLab, GitHub</li>
         </ul>
@@ -63,6 +63,8 @@
     <section class="centering">
       <h1 class="center">Projects</h1>
       <ul>
+        <li>Wellness web application for a client with React </li>
+        <li>To-do web application with React </li>
         <li>Currency Converter with Java </li>
         <li>Calculator with Java</li>
         <li>ATM Pin with Java</li>
@@ -92,21 +94,23 @@
        //Thumbnail image controls
       const currentSlide= (n) => {
           slideIndex = n;
-          showSlides(slideIndex);
+          showSlides(slideIndex,e);
        }
 
-       function showSlides(n)
+       function showSlides(n,e)
        {
            let i;
            let slides = document.getElementsByClassName("mySlides"); //Gets slides in array form
            let dots = document.getElementsByClassName("dot");
-           if (n > slides.length)
-           {
-               slideIndex = 1;
-           }
+
            if (n < 1)
            {
                slideIndex = slides.length;
+           }
+
+           if (n > slides.length)
+           {
+               slideIndex = 1;
            }
            for (i = 0; i < slides.length; i++)
            {
